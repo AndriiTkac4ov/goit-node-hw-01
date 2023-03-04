@@ -24,3 +24,10 @@ function removeContact(contactId) {
 function addContact(name, email, phone) {
   // ...твій код
 }
+
+module.exports = {
+    listContacts,
+    getContactById,
+    removeContact,
+    addContact,
+}
