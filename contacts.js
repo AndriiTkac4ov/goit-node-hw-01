@@ -9,7 +9,7 @@ async function listContacts() {
     const data = await fs.readFile(contactsPath, 'utf8');
     const listContacts = JSON.parse(data);
   
-    // console.table(listContacts);
+    console.table(listContacts);
 
     return listContacts;
   } catch (error) {
@@ -30,6 +30,7 @@ async function getContactById(contactId) {
     }
     //Finish of test for validate if a contact does not exist.
 
+    console.table(contactById);
     // console.log(colors.brightYellow(contactById));
 
     return contactById;
